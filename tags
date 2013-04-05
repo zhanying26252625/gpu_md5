@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS            = -o3 -g$/;"	m
+CUDA_INSTALL_PATH	Makefile	/^CUDA_INSTALL_PATH = \/usr\/local\/cuda$/;"	m
+F	utility.cpp	160;"	d	file:
+FF	utility.cpp	170;"	d	file:
+G	utility.cpp	161;"	d	file:
+GG	utility.cpp	175;"	d	file:
+H	utility.cpp	162;"	d	file:
+HH	utility.cpp	180;"	d	file:
+I	utility.cpp	163;"	d	file:
+II	utility.cpp	185;"	d	file:
+INCLUDES	Makefile	/^INCLUDES = -I. -I$(CUDA_INSTALL_PATH)\/include -I$(HOME)\/NVIDIA_CUDA_SDK\/common\/inc -I$(CUDA_INSTALL_PATH)\/samples\/common\/inc$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS           = -lrt -lm $(LIBS) $(LIB64) -lcudart -lstdc++ $/;"	m
+LIB64	Makefile	/^LIB64 = -L$(CUDA_INSTALL_PATH)\/lib64$/;"	m
+LIBS	Makefile	/^LIBS = -L$(CUDA_INSTALL_PATH)\/lib -L$(HOME)\/NVIDIA_CUDA_SDK\/lib$/;"	m
+NVCC	Makefile	/^NVCC = nvcc$/;"	m
+ROTATE_LEFT	utility.cpp	166;"	d	file:
+S11	utility.cpp	208;"	d	file:
+S12	utility.cpp	209;"	d	file:
+S13	utility.cpp	210;"	d	file:
+S14	utility.cpp	211;"	d	file:
+S21	utility.cpp	230;"	d	file:
+S22	utility.cpp	231;"	d	file:
+S23	utility.cpp	232;"	d	file:
+S24	utility.cpp	233;"	d	file:
+S31	utility.cpp	252;"	d	file:
+S32	utility.cpp	253;"	d	file:
+S33	utility.cpp	254;"	d	file:
+S34	utility.cpp	255;"	d	file:
+S41	utility.cpp	274;"	d	file:
+S42	utility.cpp	275;"	d	file:
+S43	utility.cpp	276;"	d	file:
+S44	utility.cpp	277;"	d	file:
+calculate_grid_parameters	gpu_md5.cpp	/^bool calculate_grid_parameters(int gridDim[3], int threadsPerBlock, int neededthreads, int dynShmemPerThread, int staticShmemPerBlock)$/;"	f
+ch	gpu_md5.cpp	/^	char ch[16];$/;"	m	union:md5hash	file:
+cuda_compute_md5s	gpu_md5.cpp	/^int cuda_compute_md5s(std::vector<md5hash> &hashes, const std::vector<std::string> &ptext, uint *target = NULL, bool benchmark = false)$/;"	f
+deviceQuery	deviceQuery.cpp	/^void deviceQuery()$/;"	f
+find_best_factorization	gpu_md5.cpp	/^void find_best_factorization(int &bx, int &by, int nblocks)$/;"	f
+getCudaAttribute	deviceQuery.cpp	/^inline void getCudaAttribute(T *attribute, CUdevice_attribute device_attribute, int device)$/;"	f
+getw	utility.cpp	190;"	d	file:
+gpuCrack	gpu_md5.cpp	/^int gpuCrack(int argc, char **argv)$/;"	f
+headers	Makefile	/^ headers = $(wildcard *.h)$/;"	m
+k	utility.cpp	/^static const uint k[64] =$/;"	v	file:
+leftrotate	utility.cpp	/^inline uint leftrotate (uint x, uint c)$/;"	f
+main	main.cpp	/^int main(int argc, char** argv){$/;"	f
+md5_cpu	utility.cpp	/^void md5_cpu(uint w[16], uint &a, uint &b, uint &c, uint &d)$/;"	f
+md5_cpu_v2	utility.cpp	/^void md5_cpu_v2(const uint *in, uint &a, uint &b, uint &c, uint &d)$/;"	f
+md5_prep	utility.cpp	/^void md5_prep(char *c0)$/;"	f
+md5_prep_array	gpu_md5.cpp	/^void md5_prep_array(std::valarray<char> &paddedWords, const std::vector<std::string> &words)$/;"	f
+md5hash	gpu_md5.cpp	/^union md5hash$/;"	u	file:
+niters	gpu_md5.cpp	/^int niters = 10;$/;"	v
+objects	Makefile	/^objects = main.o utility.o gpu_md5.o deviceQuery.o gpu_md5_gpu.cu_o $/;"	m
+pArgc	deviceQuery.cpp	/^int *pArgc = NULL;$/;"	v
+pArgv	deviceQuery.cpp	/^char **pArgv = NULL;$/;"	v
+print_md5	utility.cpp	/^void print_md5(uint *hash, bool crlf)$/;"	f
+r	utility.cpp	/^inline uint r(const uint i)$/;"	f
+rconst	utility.cpp	/^static const uint rconst[16] =$/;"	v	file:
+step	utility.cpp	/^inline void step(uint i, uint &f, uint &g, uint &a, uint &b, uint &c, uint &d, uint *w)$/;"	f
+ui	gpu_md5.cpp	/^	uint ui[4];$/;"	m	union:md5hash	file:
+uint	utility.cpp	/^typedef unsigned int uint;$/;"	t	file:
